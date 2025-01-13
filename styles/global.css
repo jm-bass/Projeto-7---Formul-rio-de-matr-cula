@@ -26,5 +26,16 @@
 
 body {
   overflow: hidden;/*assim, o que sobra não aparece. logo, não terá rolagem*/
+
+  font: var(--text);
+  color: var(--text-secondary);
 }
 
+h1, h2 {
+  color: var(--text-primary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+} /*bom padrão para a imagem conseguir se encaixar nos lugares onde precisa a depender do tamanho(zoom)*/
