@@ -27,7 +27,8 @@
 
 
         <!--importante esse form estar aqui, porque assim ele fica no lado dos 51.25% do main no display grid-->
-        <form>
+        <form method="post" enctype="multipart/form-data"> <!--normalmente se define o method post para envio de arquivos-->
+          <!--é necessário colocar esse enctype="multipar/form-data" quando o input tiver o campo file(arquivos)-->
           <fieldset class="child-info">
             <legend>Informações da criança</legend>
 
@@ -60,7 +61,22 @@
 
             <div class="textarea-wrapper"><!--wrapper é "embrulho"-->
               <label for="medical-info">Informações médicas</label>
-              <textarea name="medical-info" id="medical-info" cols="30" rows="10"></textarea>
+              <textarea
+                name="medical-info"
+                id="medical-info"
+                cols="30" rows="10"
+                placeholder="A criança possui alguma condição médica que a escola deva estar ciente? (Se sim, especifique)"></textarea>
+            </div>
+
+            <div class="droparea-wrapper">
+              <input type="file"
+                id="birth-file"
+                name="birth-file">
+              <img src="assets/icons/cloud-upload.svg" alt="">
+              <p>
+                Clique aqui para <br>
+                selecionar os arquivos
+              </p>
             </div>
 
 
