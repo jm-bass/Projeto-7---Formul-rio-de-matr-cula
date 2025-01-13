@@ -16,6 +16,7 @@
 
   --surface-primary: #ffffff;
   --surface-secondary: #fee7d6;
+  --surface-disabled: #E7E5E4;
 
   --stroke-default: #d6d3d1;
   --stroke-hightlight: #f3541c;
@@ -39,3 +40,15 @@ img {
   max-width: 100%;
   height: auto;
 } /*bom padrão para a imagem conseguir se encaixar nos lugares onde precisa a depender do tamanho(zoom)*/
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
