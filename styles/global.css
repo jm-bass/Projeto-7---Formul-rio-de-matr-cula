@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --font-family: 'Poppins', sans-serif;
   --text: 400 1rem/*tamanho da fonte*//1.5/*font-weigth*/ var(--font-family);
@@ -17,3 +23,8 @@
 
 }
 /*em: procura no elemento pai - rem: procura no elemento root(body, normalmente)*/
+
+body {
+  overflow: hidden;/*assim, o que sobra não aparece. logo, não terá rolagem*/
+}
+
